@@ -103,8 +103,8 @@ client.unload = command => {
 };
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'herkese çay') {
-    msg.reply('Þakire Yooh :smile:');
+  if (msg.content.toLowerCase() === 'SAA') {
+    msg.reply('Aleykümselaam Hoşgeldin :smile:');
   }
 });
 
