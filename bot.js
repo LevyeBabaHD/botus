@@ -16,10 +16,10 @@ client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 fs.readdir('./komutlar/', (err, files) => {
   if (err) console.error(err);
-  log(`${files.length} komut yüklenecek.`);
+  log(`${files.length} komut yÃ¼klenecek.`);
   files.forEach(f => {
     let props = require(`./komutlar/${f}`);
-    log(`Yüklenen komut: ${props.help.name}.`);
+    log(`YÃ¼klenen komut: ${props.help.name}.`);
     client.commands.set(props.help.name, props);
     props.conf.aliases.forEach(alias => {
       client.aliases.set(alias, props.help.name);
@@ -33,7 +33,7 @@ client.on('guildMemberAdd', member => {
     const hg = new Discord.RichEmbed()
     .setColor('RANDOM')
     .setThumbnail(member.user.displayAvatarURL)
-    .setDescription('Sunucuya yeni biri katıldı hoşgeldin! ' + ${member});
+    .setDescription('Sunucuya yeni biri katÃ½ldÃ½ hoÃ¾geldin! ' + ${member});
     return channel.sendEmbed(hg);
 });
 
@@ -43,7 +43,7 @@ client.on('guildMemberRemove', member => {
      const bb = new Discord.RichEmbed()
     .setColor('RANDOM')
     .setThumbnail(member.user.displayAvatarURL)
-    .setDescription('Sunucudan ' + ${member} + 'ayrıldı güle güle!');
+    .setDescription('Sunucudan ' + ${member} + 'ayrÃ½ldÃ½ gÃ¼le gÃ¼le!');
     return channel.sendEmbed(bb);
 });
 
@@ -103,55 +103,46 @@ client.unload = command => {
 };
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'herkese çay') {
-    msg.reply('Şakire Yooh :smile:');
+  if (msg.content.toLowerCase() === 'herkese Ã§ay') {
+    msg.reply('Ãakire Yooh :smile:');
+  }
+});
+
+
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'sa') {
+    msg.reply('AleykÃ¼mselaam HoÅŸgeldin :smile: ');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'sigara ic') {
-     msg.reply('Sigara İçiyorum!');
-      msg.edit(' :smoking: :cloud: :cloud: :cloud: ');
-      msg.edit(' :smoking: :cloud: :cloud: ');
-      msg.edit(' :smoking: :cloud:  ');
-      msg.edit(' :smoking:  ');
-      msg.edit(' Sigaram Bitti! ŞAKİR İÇİYO DİYE SİZDE İÇMEYİN KAMU SPOTU :smile: ');
+  if (msg.content.toLowerCase() === 'Selamun aleykÃ¼m') {
+    msg.reply('AleykÃ¼mselaam HoÅŸgeldin :smile:');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'peki şakire çay yok') {
-    msg.reply('Ne demek Şakir ');
+  if (msg.content.toLowerCase() === 'SELAMUN ALEYKÃœM') {
+    msg.reply('AleykÃ¼mselaam HoÅŸgeldin :smile:');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'adınımı değiştirdin') {
-    msg.reply('Sen bana nasıl Şakir dersin lann kelek!');
+  if (msg.content.toLowerCase() === 'sea') {
+    msg.reply('AleykÃ¼mselaam HoÅŸgeldin :smile:');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'ne diyem mahmutmu diyem şakir') {
-    msg.reply('Şakir abi, dayı, ağa diyeceksin!');
+  if (msg.content.toLowerCase() === 'Saa') {
+    msg.reply('AleykÃ¼mselaam HoÅŸgeldin :smile:');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'o günler bitti şakir') {
-    msg.reply('Ne Demek Bitti');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'şakir') {
-    msg.reply('Efendim Ciğerim');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'şakir bi sus') {
-    msg.reply('Susuyorum Ulen Sen Konuş Ciğerim :smile:');
+  if (msg.content === 'selamun aleykum') {
+    msg.reply('AleykÃ¼mselaam HoÅŸgeldin :smile:');
   }
 });
 
