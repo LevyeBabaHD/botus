@@ -8,10 +8,10 @@ exports.run = (client, message, params) => {
   .setTitle("Komutlar")
   .setDescription('')
   .setColor(0x00ffff)
-  .addField("**Eğlence ve Kullanıcı Komutları:**", `şakir-banned = Dene ve Gör! \nşakir-avatarım = Avatarınınızı Gösterir. \nşakir-herkesebendençay = Herkese Çay Alırsınız. \nşakir-koş = Koşarsınız.\nşakir-çayiç = Çay İçersiniz. \nşakir-çekiç = İstediğiniz Kişiye Çekiç Atarsınız. \nşakir-çayaşekerat = Çaya Şeker Atarsınız. \nşakir-yumruh-at = Yumruk Atarsınız. \nşakir-yaz = Bota İstediğiniz Şeyi Yazdırırsınız. \nşakir-sunucuresmi = BOT Sunucunun Resmini Atar. \nşakir-sunucubilgi = BOT Sunucu Hakkında Bilgi Verir. \nşakir-kullanıcıbilgim = Sizin Hakkınızda Bilgi Verir. \nşakir-söv = Size Özelden Söver.`)
-  .addField("**Sunucu Yetkilisi Komutları**", `şakir-ban = İstediğiniz Kişiyi Sunucudan Banlar. \nşakir-kick  = İstediğiniz Kişiyi Sunucudan Atar. \nşakir-unban = İstediğiniz Kişinin Yasağını Açar. \nşakir-sustur = İstediğiniz Kişiyi Susturur. -MUTED- \nşakir-oylama = Oylama Açar. \nşakir-duyurbot = Güzel Bir Duyuru Görünümü Sağlar.`)
-  .addField("**Botun Ana Komutları**", "şakir-yardım = BOT Komutlarını Atar. \şakir-bilgi = BOT Kendisi Hakkında Bilgi Verir. \nşakir-ping = BOT Gecikme Süresini Söyler. \nşakir-davet = BOT Davet Linkini Atar. \nk!istatistik = BOT İstatistiklerini Atar.")
-  .addField("**Gizli Komutlar:**", " **herkese çay = Dene Ve Gör \npeki şakire çay yok= Dene Ve Gör \nadınımı değiştirdin = Dene Ve Gör**\nne diyem mahmutmu diyem şakir = Dene Ve Gör\no günler bitti şakir= Dene Ve Gör\nşakir = Denede Gör\nşakir bi sus\ Dene Ve Gör   ")
+  .addField("**Eğlence ve Kullanıcı Komutları:**", `g!banned = Dene ve Gör! \ng!avatarım = Avatarınınızı Gösterir. \ng!herkesebendençay = Herkese Çay Alırsınız. \ng!koş = Koşarsınız.\ng!çayiç = Çay İçersiniz. \ng!çekiç = İstediğiniz Kişiye Çekiç Atarsınız. \ng!çayaşekerat = Çaya Şeker Atarsınız. \ng!yumruh-at = Yumruk Atarsınız. \ng!yaz = Bota İstediğiniz Şeyi Yazdırırsınız. \ng!sunucuresmi = BOT Sunucunun Resmini Atar. \ng!sunucubilgi = BOT Sunucu Hakkında Bilgi Verir. \ng!kullanıcıbilgim = Sizin Hakkınızda Bilgi Verir. \ng!söv = Size Özelden Söver.`)
+  .addField("**Sunucu Yetkilisi Komutları**", `g!-ban = İstediğiniz Kişiyi Sunucudan Banlar. \ng!-kick  = İstediğiniz Kişiyi Sunucudan Atar. \ng!unban = İstediğiniz Kişinin Yasağını Açar. \ng!-sustur = İstediğiniz Kişiyi Susturur. -MUTED- \ng!oylama = Oylama Açar. \ng!duyurbot = Güzel Bir Duyuru Görünümü Sağlar.`)
+  .addField("**Botun Ana Komutları**", "g!yardım = BOT Komutlarını Atar. \g!bilgi = BOT Kendisi Hakkında Bilgi Verir. \ng!ping = BOT Gecikme Süresini Söyler. \ng!davet = BOT Davet Linkini Atar. \ng!istatistik = BOT İstatistiklerini Atar.")
+  .addField("**Gizli Komutlar:**", "  BULUNMAMAKTADIR ")
   .setFooter('**Beni Yaratan =ＬＥＶＹＥ#8336**  ')
 
 
