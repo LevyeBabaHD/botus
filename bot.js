@@ -27,26 +27,6 @@ fs.readdir('./komutlar/', (err, files) => {
   });
 });
 
-client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('name', 'hosgeldin');
-  if (!channel) return;
-    const hg = new Discord.RichEmbed()
-    .setColor('RANDOM')
-    .setThumbnail(member.user.displayAvatarURL)
-    .setDescription('Sunucuya yeni biri katýldý hoþgeldin! ' + ${member});
-    return channel.sendEmbed(hg);
-});
-
-client.on('guildMemberRemove', member => {
-  const channel = member.guild.channels.find('name', 'hosgeldin');
-  if (!channel) return;
-     const bb = new Discord.RichEmbed()
-    .setColor('RANDOM')
-    .setThumbnail(member.user.displayAvatarURL)
-    .setDescription('Sunucudan ' + ${member} + 'ayrýldý güle güle!');
-    return channel.sendEmbed(bb);
-});
-
 
 
 
