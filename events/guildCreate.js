@@ -7,10 +7,10 @@ var prefix = ayarlar.prefix;
 const girismesaj = [
   'Botumuzun özelliklerini öğrenmek için !yardım komutunu kullanabilirsin.',
   '**ÖNEMLİ:** Botun kullanması için mod-log kanalı açın ve deneme için',
-  'şakir-uyarı komutunu kullanın.',
+  'g!uyar komutunu kullanın.',
   '',
-  `Şakir resmi sunucusu : https://discord.gg/SHWfZm`,
-  `**Şakir Sunucusu** https://discord.gg/SHWfZm`
+  `Red Ghost resmi sunucusu : https://discord.gg/THMXfqb`,
+  ``
 ]
 
 client.on('guildCreate', guild => {
